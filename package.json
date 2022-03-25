@@ -8,7 +8,9 @@
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
-    "migrateproduction": "NODE_ENV=production knex migrate:latest"
+    "migrateproduction": "NODE_ENV=production knex migrate:latest",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -33,6 +35,8 @@
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "store": "^2.0.12",
-    "uniqid": "^5.0.3"
-  }
+    "uniqid": "^5.0.3",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
