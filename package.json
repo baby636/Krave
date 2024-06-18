@@ -30,8 +30,8 @@
     "react-qr-svg": "^2.1.0",
     "react-router-dom": "4.3.1",
     "slpjs": "^0.15.12",
-    "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0",
+    "socket.io": "^2.4.0",
+    "socket.io-client": "^2.4.0",
     "store": "^2.0.12",
     "uniqid": "^5.0.3"
   }
